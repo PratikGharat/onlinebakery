@@ -13,8 +13,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
-   
+
     <!-- custom css file link  -->
     <link rel="stylesheet" href="style.css">
 
@@ -30,12 +31,22 @@
         </a>
 
         <nav class="navbar">
-            <a href="#home">home</a>
-            <a href="#features">features</a>
-            <a href="#products">products</a>
-            <a href="#categories">categories</a>
-            <a href="#review">review</a>
-            <a href="#blogs">blogs</a>
+            <a href="#">home</a>
+            <a href="#About us">About us</a>
+            <div class="dropdown">
+                  <button class="dropbtn">Categories
+                    <i class="fa fa-caret-down"></i>
+                  </button>
+              <div class="dropdown-content">
+                 <a href="#">Cakes</a>
+                 <a href="#">Cookies</a>
+                 <a href="#">Snacks</a>
+                 <a href="#">Muffines and Donut</a>
+              </div>
+            </div> 
+            <a href="#category">Products</a>
+            <a href="#testimonials">review</a>
+            <a href="#">Contact Us</a>
         </nav>
 
         <div class="icons">
@@ -147,6 +158,9 @@
             <span class="visually-hidden">Next</span>
         </button>
     </div>
+
+<!-------------------------------------------------- Category  ---------------------------------------------------------->
+
     <section class="category" id="category">
         <div class="header-1">
         <h1 class="heading">shop by category</h1></div>
@@ -155,8 +169,8 @@
                 <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F43%2F2020%2F05%2F19%2Fhigh-altitude-buttermilk-devils-food-cake-photo-by-buckwheat-queen-3777917.jpg&w=200&c=sc&poi=face&q=85"
                     alt="">
                 <div class="content">
-                    <h1>Bonsai</h1>
-                    <a href="#" class="btn">shop now</a>
+                    <h1>Cakes</h1>
+                    <a href="#cakes" class="btn">shop now</a>
                 </div>
             </div>
             <div class="box">
@@ -164,184 +178,801 @@
                 <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F43%2F2020%2F08%2F20%2FDark-Chocolate-Cake-I.jpg&w=200&c=sc&poi=face&q=85"
                     alt="">
                 <div class="content">
-                    <h1>plants for house</h1>
-                    <a href="#" class="btn">shop now</a>
+                    <h1>cookies</h1>
+                    <a href="#cookies" class="btn">shop now</a>
                 </div>
             </div>
             <div class="box">
                 <img src="image/blog-3.jpg" alt="">
                 <div class="content">
-                    <h1>plants for office</h1>
-                    <a href="#" class="btn">shop now</a>
+                    <h1>snacks</h1>
+                    <a href="#snacks" class="btn">shop now</a>
                 </div>
             </div>
             <div class="box">
                 <img src="image/pic-1.png" alt="">
                 <div class="content">
-                    <h1>gift plants</h1>
-                    <a href="#" class="btn">shop now</a>
+                    <h1>Muffines and Donut</h1>
+                    <a href="#muffines" class="btn">shop now</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- catogeory option-->
-  <div class="header-1">
-        <h1 class="heading">Cakes</h1>
+    <!-- -----------------------------------------  catogeory option  -------------------------------------------------------------------->
+  <section class="featured" id="featured">
+
+    <h1 class="heading" id="cakes"> <span>Cakes</span> </h1>
+
+    <div class="swiper featured-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide box">
+               
+                <div class="image">
+                    <img src="image/product-1.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>featured books</h3>
+                    <div class="price">$15.99 <span>$20.99</span></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                
+                <div class="image">
+                    <img src="image/product-2.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>featured books</h3>
+                    <div class="price">$15.99 <span>$20.99</span></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+               
+                <div class="image">
+                    <img src="image/product-3.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>featured books</h3>
+                    <div class="price">$15.99 <span>$20.99</span></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+              
+                <div class="image">
+                    <img src="image/product-4.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>featured books</h3>
+                    <div class="price">$15.99 <span>$20.99</span></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+              
+                <div class="image">
+                    <img src="image/product-5.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>featured books</h3>
+                    <div class="price">$15.99 <span>$20.99</span></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                
+                <div class="image">
+                    <img src="image/product-6.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>featured books</h3>
+                    <div class="price">$15.99 <span>$20.99</span></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                
+                <div class="image">
+                    <img src="image/product-7.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>featured books</h3>
+                    <div class="price">$15.99 <span>$20.99</span></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                
+                <div class="image">
+                    <img src="image/product-8.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>featured books</h3>
+                    <div class="price">$15.99 <span>$20.99</span></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            
         </div>
-    <main>
-        <div class="slide-container">
-        <i id="slide-left" class="fas fa-arrow-left arrow"></i>
-    <section class="product-container" id="slider">
-        
-        <div class="thumbnail">
-            <img class="cat-option" src="https://assets.winni.in/c_limit,dpr_1,fl_progressive,q_80,w_400/31204_chocolate-truffle.webp" alt="1">
-            <div class="product-details">
-                <h2>Demo Product</h2>
-                <p> <span>$39.99</span> $29.99</p>
-                <a href="#">Add to Cart</a>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+    </div>
+
+</section>
+
+
+
+<!-------------------------------------------------------------------------------------->
+
+<section class="featured" id="featured">
+
+    <h1 class="heading" id="cookies"> <span>Cookies</span> </h1>
+
+    <div class="swiper featured-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide box">
+               
+                <div class="image">
+                    <img src="image/product-1.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>featured books</h3>
+                    <div class="price">$15.99 <span>$20.99</span></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                
+                <div class="image">
+                    <img src="image/product-2.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>featured books</h3>
+                    <div class="price">$15.99 <span>$20.99</span></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+               
+                <div class="image">
+                    <img src="image/product-3.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>featured books</h3>
+                    <div class="price">$15.99 <span>$20.99</span></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+              
+                <div class="image">
+                    <img src="image/product-4.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>featured books</h3>
+                    <div class="price">$15.99 <span>$20.99</span></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+              
+                <div class="image">
+                    <img src="image/product-5.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>featured books</h3>
+                    <div class="price">$15.99 <span>$20.99</span></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                
+                <div class="image">
+                    <img src="image/product-6.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>featured books</h3>
+                    <div class="price">$15.99 <span>$20.99</span></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                
+                <div class="image">
+                    <img src="image/product-7.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>featured books</h3>
+                    <div class="price">$15.99 <span>$20.99</span></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                
+                <div class="image">
+                    <img src="image/product-8.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>featured books</h3>
+                    <div class="price">$15.99 <span>$20.99</span></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            
+        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+    </div>
+
+</section>
+
+<!------------------------------------------------------------------------------------>
+
+<section class="featured" id="featured">
+
+    <h1 class="heading" id="snacks"> <span>Snacks</span> </h1>
+
+    <div class="swiper featured-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide box">
+               
+                <div class="image">
+                    <img src="image/product-1.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>featured books</h3>
+                    <div class="price">$15.99 <span>$20.99</span></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                
+                <div class="image">
+                    <img src="image/product-2.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>featured books</h3>
+                    <div class="price">$15.99 <span>$20.99</span></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+               
+                <div class="image">
+                    <img src="image/product-3.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>featured books</h3>
+                    <div class="price">$15.99 <span>$20.99</span></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+              
+                <div class="image">
+                    <img src="image/product-4.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>featured books</h3>
+                    <div class="price">$15.99 <span>$20.99</span></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+              
+                <div class="image">
+                    <img src="image/product-5.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>featured books</h3>
+                    <div class="price">$15.99 <span>$20.99</span></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                
+                <div class="image">
+                    <img src="image/product-6.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>featured books</h3>
+                    <div class="price">$15.99 <span>$20.99</span></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                
+                <div class="image">
+                    <img src="image/product-7.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>featured books</h3>
+                    <div class="price">$15.99 <span>$20.99</span></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                
+                <div class="image">
+                    <img src="image/product-8.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>featured books</h3>
+                    <div class="price">$15.99 <span>$20.99</span></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            
+        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+    </div>
+
+</section>
+
+<!-------------------------------------------------------------------------------------------->
+<section class="featured" id="featured">
+
+    <h1 class="heading" id="muffines"> <span>Muffines and Donut</span> </h1>
+
+    <div class="swiper featured-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide box">
+               
+                <div class="image">
+                    <img src="image/product-1.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>featured books</h3>
+                    <div class="price">$15.99 <span>$20.99</span></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                
+                <div class="image">
+                    <img src="image/product-2.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>featured books</h3>
+                    <div class="price">$15.99 <span>$20.99</span></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+               
+                <div class="image">
+                    <img src="image/product-3.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>featured books</h3>
+                    <div class="price">$15.99 <span>$20.99</span></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+              
+                <div class="image">
+                    <img src="image/product-4.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>featured books</h3>
+                    <div class="price">$15.99 <span>$20.99</span></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+              
+                <div class="image">
+                    <img src="image/product-5.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>featured books</h3>
+                    <div class="price">$15.99 <span>$20.99</span></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                
+                <div class="image">
+                    <img src="image/product-6.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>featured books</h3>
+                    <div class="price">$15.99 <span>$20.99</span></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                
+                <div class="image">
+                    <img src="image/product-7.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>featured books</h3>
+                    <div class="price">$15.99 <span>$20.99</span></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                
+                <div class="image">
+                    <img src="image/product-8.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>featured books</h3>
+                    <div class="price">$15.99 <span>$20.99</span></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+
+            
+        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+    </div>
+
+</section>
+
+<!-- --------------------------------------   deal section starts ---------------------------------------->
+
+<section class="deal" id="deal">
+        <h1 class="heading"> deal of the day</h1>
+        <div class="row">
+            <div class="content">
+                <h3 class="title">don't miss the deal</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam rerum laborum numquam saepe vero
+                    sint dicta mollitia, delectus doloremque. In maiores sed eum, dignissimos dolore obcaecati itaque.
+                    Quaerat, dolores esse.</p>
+                <div class="count-down">
+                    <div class="box">
+                        <h3 id="day">00</h3>
+                        <span>day</span>
+                    </div>
+                    <div class="box">
+                        <h3 id="hours">00</h3>
+                        <span>hours</span>
+                    </div>
+                    <div class="box">
+                        <h3 id="minute">00</h3>
+                        <span>minute</span>
+                    </div>
+                    <div class="box">
+                        <h3 id="seconds">00</h3>
+                        <span>seconds</span>
+                    </div>
+                </div>
+                <a href="#category" class="btn">check out deal</a>
+            </div>
+            <div class="image">
+                <img src="image/cat-1.png" alt="">
             </div>
         </div>
-        <div class="thumbnail">
-            <img class="cat-option" src="image/product-2.png" alt="2">
-            <div class="product-details">
-                <h2>Demo Product</h2>
-                <p> <span>$39.99</span> $29.99</p>
-                <a href="#">Add to Cart</a>
-            </div>
-        </div>
-        <div class="thumbnail">
-            <img class="cat-option" src="image/product-3.png" alt="3">
-            <div class="product-details">
-                <h2>Demo Product</h2>
-                <p> <span>$39.99</span> $29.99</p>
-                <a href="#">Add to Cart</a>
-            </div>
-        </div>
-        <div class="thumbnail">
-            <img class="cat-option" src="image/product-4.png" alt="4">
-            <div class="product-details">
-                <h2>Demo Product</h2>
-                <p> <span>$39.99</span> $29.99</p>
-                <a href="#">Add to Cart</a>
-            </div>
-        </div>
-        <div class="thumbnail">
-            <img class="cat-option" src="image/product-5.png" alt="5">
-            <div class="product-details">
-                <h2>Demo Product</h2>
-                <p> <span>$39.99</span> $29.99</p>
-                <a href="#">Add to Cart</a>
-            </div>
-        </div>
-        <div class="thumbnail">
-            <img class="cat-option" src="image/product-6.png" alt="6">
-            <div class="product-details">
-                <h2>Demo Product</h2>
-                <p> <span>$39.99</span> $29.99</p>
-                <a href="#">Add to Cart</a>
-            </div>
-        </div>
-        <div class="thumbnail">
-            <img class="cat-option" src="image/product-7.png" alt="7">
-            <div class="product-details">
-                <h2>Demo Product</h2>
-                <p> <span>$39.99</span> $29.99</p>
-                <a href="#">Add to Cart</a>
-            </div>
-        </div>
-        <div class="thumbnail">
-            <img class="cat-option" src="image/product-8.png" alt="8">
-            <div class="product-details">
-                <h2>Demo Product</h2>
-                <p> <span>$39.99</span> $29.99</p>
-                <a href="#">Add to Cart</a>
-            </div>
-        </div>
-       
     </section>
-            <i id="slide-right" class="fas fa-arrow-right arrow"></i></div>
-</main>
 
 
-<!------------------>
-
+<!-------------------------------------------------Gallery section------------------------------------------>
 <div class="header-1">
-        <h1 class="heading">Cookies</h1>
+        <h1 class="heading">Our Gallery</h1></div>
+<div class="image-gallery">
+      <div class="image-box">
+        <img src="image/product-1.png" alt="img.jpg" />
+        <div class="overlay">
+          <div class="details">
+            <h3 class="title">
+              <a href="#">Your Title</a>
+            </h3>
+            <span class="category">
+              <a href="#">Category</a>
+            </span>
+          </div>
         </div>
-    <main>
-        <div class="slide-container">
-        <i id="slide-left-1" class="fas fa-arrow-left arrow"></i>
-    <section class="product-container" id="slider-1">
-        
-        <div class="thumbnail-1">
-            <img class="cat-option" src="https://assets.winni.in/c_limit,dpr_1,fl_progressive,q_80,w_400/31204_chocolate-truffle.webp" alt="1">
-            <div class="product-details">
-                <h2>Demo Product</h2>
-                <p> <span>$39.99</span> $29.99</p>
-                <a href="#">Add to Cart</a>
-            </div>
+      </div>
+      <div class="image-box">
+        <img src="image/product-2.png" alt="img.jpg" />
+        <div class="overlay">
+          <div class="details">
+            <h3 class="title">
+              <a href="#">Your Title</a>
+            </h3>
+            <span class="category">
+              <a href="#">Category</a>
+            </span>
+          </div>
         </div>
-        <div class="thumbnail-1">
-            <img class="cat-option" src="image/product-2.png" alt="2">
-            <div class="product-details">
-                <h2>Demo Product</h2>
-                <p> <span>$39.99</span> $29.99</p>
-                <a href="#">Add to Cart</a>
-            </div>
+      </div>
+      <div class="image-box">
+        <img src="image/product-3.png" alt="img.jpg" />
+        <div class="overlay">
+          <div class="details">
+            <h3 class="title">
+              <a href="#">Your Title</a>
+            </h3>
+            <span class="category">
+              <a href="#">Category</a>
+            </span>
+          </div>
         </div>
-        <div class="thumbnail-1">
-            <img class="cat-option" src="image/product-3.png" alt="3">
-            <div class="product-details">
-                <h2>Demo Product</h2>
-                <p> <span>$39.99</span> $29.99</p>
-                <a href="#">Add to Cart</a>
-            </div>
+      </div>
+      <div class="image-box">
+        <img src="image/product-4.png" alt="img.jpg" />
+        <div class="overlay">
+          <div class="details">
+            <h3 class="title">
+              <a href="#">Your Title</a>
+            </h3>
+            <span class="category">
+              <a href="#">Category</a>
+            </span>
+          </div>
         </div>
-        <div class="thumbnail-1">
-            <img class="cat-option" src="image/product-4.png" alt="4">
-            <div class="product-details">
-                <h2>Demo Product</h2>
-                <p> <span>$39.99</span> $29.99</p>
-                <a href="#">Add to Cart</a>
-            </div>
+      </div>
+      <div class="image-box">
+        <img src="image/product-5.png" alt="img.jpg" />
+        <div class="overlay">
+          <div class="details">
+            <h3 class="title">
+              <a href="#">Your Title</a>
+            </h3>
+            <span class="category">
+              <a href="#">Category</a>
+            </span>
+          </div>
         </div>
-        <div class="thumbnail-1">
-            <img class="cat-option" src="image/product-5.png" alt="5">
-            <div class="product-details">
-                <h2>Demo Product</h2>
-                <p> <span>$39.99</span> $29.99</p>
-                <a href="#">Add to Cart</a>
-            </div>
+      </div>
+      <div class="image-box">
+        <img src="image/product-7.png" alt="img.jpg" />
+        <div class="overlay">
+          <div class="details">
+            <h3 class="title">
+              <a href="#">Your Title</a>
+            </h3>
+            <span class="category">
+              <a href="#">Category</a>
+            </span>
+          </div>
         </div>
-        <div class="thumbnail-1">
-            <img class="cat-option" src="image/product-6.png" alt="6">
-            <div class="product-details">
-                <h2>Demo Product</h2>
-                <p> <span>$39.99</span> $29.99</p>
-                <a href="#">Add to Cart</a>
-            </div>
+      </div>
+      <div class="image-box">
+        <img src="image/product-8.png" alt="img.jpg" />
+        <div class="overlay">
+          <div class="details">
+            <h3 class="title">
+              <a href="#">Your Title</a>
+            </h3>
+            <span class="category">
+              <a href="#">Category</a>
+            </span>
+          </div>
         </div>
-        <div class="thumbnail-1">
-            <img class="cat-option" src="image/product-7.png" alt="7">
-            <div class="product-details">
-                <h2>Demo Product</h2>
-                <p> <span>$39.99</span> $29.99</p>
-                <a href="#">Add to Cart</a>
-            </div>
+      </div>
+      <div class="image-box">
+        <img src="image/product-5.png" alt="img.jpg" />
+        <div class="overlay">
+          <div class="details">
+            <h3 class="title">
+              <a href="#">Your Title</a>
+            </h3>
+            <span class="category">
+              <a href="#">Category</a>
+            </span>
+          </div>
         </div>
-        <div class="thumbnail-1">
-            <img class="cat-option" src="image/product-8.png" alt="8">
-            <div class="product-details">
-                <h2>Demo Product</h2>
-                <p> <span>$39.99</span> $29.99</p>
-                <a href="#">Add to Cart</a>
-            </div>
+      </div>
+      <div class="image-box">
+        <img src="image/cat-1.png" alt="img.jpg" />
+        <div class="overlay">
+          <div class="details">
+            <h3 class="title">
+              <a href="#">Your Title</a>
+            </h3>
+            <span class="category">
+              <a href="#">Category</a>
+            </span>
+          </div>
         </div>
-       
-    </section>
-            <i id="slide-right-1" class="fas fa-arrow-right arrow"></i></div>
-</main>
+      </div>
+      <div class="image-box">
+        <img src="image/cat-3.png" alt="img.jpg" />
+        <div class="overlay">
+          <div class="details">
+            <h3 class="title">
+              <a href="#">Your Title</a>
+            </h3>
+            <span class="category">
+              <a href="#">Category</a>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="image-box">
+        <img src="image/cat-4.png" alt="img.jpg" />
+        <div class="overlay">
+          <div class="details">
+            <h3 class="title">
+              <a href="#">Your Title</a>
+            </h3>
+            <span class="category">
+              <a href="#">Category</a>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="image-box">
+        <img src="image/product-6.png" alt="img.jpg" />
+        <div class="overlay">
+          <div class="details">
+            <h3 class="title">
+              <a href="#">Your Title</a>
+            </h3>
+            <span class="category">
+              <a href="#">Category</a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+<!------------------------------------------------- Review Section  ------------------------------------------------------>
+
+<section class="testimonials-section sec-padding" id="testimonials">
+     <div class="container">
+       <div class="row">
+         <div class="section-title">
+           <div class="header-1">
+        <h1 class="heading">Reviews</h1></div>
+         </div>
+       </div>
+       <div class="row">
+        <div class="testi-item" >
+           <div class="testi-author">
+             <div class="testi-author-name">
+               <h3>Ruchika Rajput</h3>
+               <span>Food blogger</span>
+             </div>
+             <div class="testi-author-img">
+               <img src="image/pic-2.png" alt="testi author img">
+             </div>
+           </div>
+           <p>
+              Vistied this place twice and loved the experience.<br>Ambiance is good.<br>Rates are resonable<br>The flavors have remains the same since the beginning<br>Must visit the this place onces.
+           </p>
+           <div class="ratings">
+             <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+           </div>
+        </div>
+        <div class="testi-item" >
+           <div class="testi-author">
+             <div class="testi-author-name">
+               <h3>Janvi Patil</h3>
+               <span>Customer</span>
+             </div>
+             <div class="testi-author-img">
+               <img src="image/pic-4.png" alt="testi author img">
+             </div>
+           </div>
+           <p>
+           This is an awesome place for family lunch/dinner <br>Food is really good<br>Their manchurian are just awesome.<br>service is fast<br>Staff is also good as they Suggest you the good option.
+           </p>
+           <div class="ratings">
+             <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+
+           </div>
+        </div>
+        <div class="testi-item" >
+           <div class="testi-author">
+             <div class="testi-author-name">
+               <h3>rahul singh</h3>
+               <span>Food blogger</span>
+             </div>
+             <div class="testi-author-img">
+               <img src="image/pic-3.png" alt="testi author img">
+             </div>
+           </div>
+           <p>
+            Just awesome food.<br>A good ambience place for family dining<br>Well known in Mumbai<br>Food quality is awesome.<br>Best for lunch time. 
+           </p>
+           <div class="ratings">
+                <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half"></i>
+
+           </div>
+        </div>
+       </div> 
+     </div>
+   </section> 
+
+<!-------------------------------------------------- Footer section   ---------------------------------------------->
+
+<footer class="footer" id="contact">
+   <div class="conatiner">
+     <div class="row">
+        <div class="footer-item" >
+          <h3>our location</h3>
+          <p>xyz street, Sector-7,<br>Mumbai - 401101</p>
+        </div>
+        <div class="footer-item" >
+          <h3>opening hours</h3>
+          <p>Monday - Sunday <br>11:30 AM - 11:00 PM </p>
+        </div>
+        <div class="footer-item" >
+          <h3>contact us</h3>
+          <p>+91 1234568597</p>
+          <p>DreamPuff@gmail.com</p>
+          <div class="social-links">
+            <a href="#" ><i class="fab fa-facebook-f"></i></a>
+            <a href="#" ><i class="fab fa-instagram"></i></a>
+            <a href="#" ><i class="fab fa-twitter"></i></a>
+            <a href="#" ><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+       </div> 
+        <div class="row">
+           <div class="copyright">
+             &copy; 2021 - All Rights are Reserved.
+           </div>
+        </div>
+     </div>
+   
+ </footer>
 
 
 
@@ -357,8 +988,8 @@
 
 
 
-
-    <script src="main.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>

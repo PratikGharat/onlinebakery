@@ -54,85 +54,59 @@ window.onscroll = () =>{
 });*/
 
 //category option
-let thumbnails = document.getElementsByClassName('thumbnail');
-let slider = document.getElementById('slider');
+var swiper = new Swiper(".featured-slider", {
+    spaceBetween: 10,
+    loop:true,
+    centeredSlides: true,
+    autoplay: {
+      delay: 9500,
+      disableOnInteraction: false,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+      },
+      450: {
+        slidesPerView: 2,
+      },
+      768: {
+        slidesPerView: 3,
+      },
+      1024: {
+        slidesPerView: 4,
+      },
+    },
+  });
 
-let buttonRight = document.getElementById('slide-right');
-let buttonLeft = document.getElementById('slide-left');
+  /////////////////////////////Deals of the day/////////////////////////////////////
 
-buttonLeft.addEventListener('click', function(){
-    slider.scrollLeft -= 125;
-})
+  let countDate = new Date('september 30,2021 00:00:00').getTime();
 
-buttonRight.addEventListener('click', function(){
-    slider.scrollLeft += 125;
-})
+  function countDown(){
 
-const maxScrollLeft = slider.scrollWidth - slider.clientWidth;
-// alert(maxScrollLeft);
-// alert("Left Scroll:" + slider.scrollLeft);
+    let now = new Date().getTime();
+    gap = countDate - now;
+    let second = 1000;
+    let minute = second * 60;
+    let hour = minute * 60;
+    let day = hour * 24;
 
-//AUTO PLAY THE SLIDER 
-function autoPlay() {
-    if (slider.scrollLeft > (maxScrollLeft - 1)) {
-        slider.scrollLeft -= maxScrollLeft;
-    } else {
-        slider.scrollLeft += 1;
-    }
-}
-let play = setInterval(autoPlay, 50);
+    let d = Math.floor(gap/(day));
+    let h = Math.floor((gap%(day)) / (hour));
+    let m = Math.floor((gap%(hour)) / (minute));
+    let s = Math.floor((gap%(minute)) / (second));
 
-// PAUSE THE SLIDE ON HOVER
-for (var i=0; i < thumbnails.length; i++){
+    document.getElementById('day').innerText = d;
+    document.getElementById('hours').innerText = h;
+    document.getElementById('minute').innerText = m;
+    document.getElementById('seconds').innerText = s;
 
-thumbnails[i].addEventListener('mouseover', function() {
-    clearInterval(play);
-});
+  }
 
-thumbnails[i].addEventListener('mouseout', function() {
-    return play = setInterval(autoPlay, 50);
-});
-}
-
-
-///////////////////////////////////////////////////
-
-let thumbnailsa = document.getElementsByClassName('thumbnail-1');
-let slidera = document.getElementById('slider-1');
-
-let buttonRighta = document.getElementById('slide-right-1');
-let buttonLefta = document.getElementById('slide-left-1');
-
-buttonLefta.addEventListener('click', function(){
-    slidera.scrollLeft -= 125;
-})
-
-buttonRighta.addEventListener('click', function(){
-    slidera.scrollLeft += 125;
-})
-
-const maxScrollLefta = slidera.scrollWidth - slidera.clientWidth;
-// alert(maxScrollLeft);
-// alert("Left Scroll:" + slider.scrollLeft);
-
-//AUTO PLAY THE SLIDER 
-function autoPlay() {
-    if (slidera.scrollLeft > (maxScrollLefta - 1)) {
-        slidera.scrollLeft -= maxScrollLefta;
-    } else {
-        slidera.scrollLeft += 1;
-    }
-}
-let playa = setInterval(autoPlay, 50);
-
-// PAUSE THE SLIDE ON HOVER
-for (var i=0; i < thumbnailsa.length; i++){
-
-thumbnailsa[i].addEventListener('mouseover', function() {
-    clearInterval(playa);
-});
-
-thumbnailsa[i].addEventListener('mouseout', function() {
-    return playa = setInterval(autoPlay, 40);
-});
-}
+  setInterval(function(){
+      countDown()
+  },1000)
