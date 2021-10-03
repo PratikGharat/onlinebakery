@@ -84,7 +84,7 @@ var swiper = new Swiper(".featured-slider", {
 
   /////////////////////////////Deals of the day/////////////////////////////////////
 
-  let countDate = new Date('september 30,2021 00:00:00').getTime();
+  let countDate = new Date('octobor 3,2021 00:00:00').getTime();
 
   function countDown(){
 
