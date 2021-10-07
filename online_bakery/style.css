@@ -501,7 +501,10 @@ section {
   text-align: center;
   
 }
-
+.featured .content p{
+  font-size: 2rem;
+  color:rgb(94, 84, 84);
+}
 
 .featured .heading{
   text-align: center;

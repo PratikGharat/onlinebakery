@@ -84,7 +84,7 @@ var swiper = new Swiper(".featured-slider", {
 
   /////////////////////////////Deals of the day/////////////////////////////////////
 
-  let countDate = new Date('octobor 3,2021 00:00:00').getTime();
+  let countDate = new Date('octobor 8,2021 00:00:00').getTime();
 
   function countDown(){
 
@@ -110,3 +110,10 @@ var swiper = new Swiper(".featured-slider", {
   setInterval(function(){
       countDown()
   },1000)
+
+
+
+  function showAlert() {
+    var myText = "Response Submitted!";
+    alert (myText);
+  }
