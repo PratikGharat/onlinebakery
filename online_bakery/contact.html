@@ -20,7 +20,7 @@
 	
 
     <!-- custom css file link  -->
-    <link rel="stylesheet" type="text/css" href="snacks.css">
+    <link rel="stylesheet" type="text/css" href="./css/contact.css">
 
 </head>
 
@@ -42,7 +42,7 @@
                     </button>
                 <div class="dropdown-content">
                   <a href="cakes.html">Cakes</a>
-                  <a href="#">Cookies</a>
+                  <a href="cookies.html">Cookies</a>
                   <a href="snacks.html">Snacks</a>
                   <a href="muffines&donate.html">Muffines and Donut</a>
                 </div>
@@ -104,6 +104,26 @@
 
     </header>
        
+    <div class="container">
+		<div class="contact-box">
+			<div class="left"></div>
+			<div class="right">
+				<h2>Contact Us</h2>
+				<input type="text" class="field" placeholder="Your Name" required>
+				<input type="text" class="field" placeholder="Your Email"required>
+				<input type="text" class="field" placeholder="Phone"required>
+				<textarea placeholder="Message" class="field"></textarea>
+				<button class="btn" onclick="showAlert()">Send</button>
+			</div>
+		</div>
+	</div>
+
+   <script>
+  function showAlert() {
+    var myText = "Response Submitted!";
+    alert (myText);
+  }
+  </script>	
 
     
 

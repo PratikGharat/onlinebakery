@@ -56,8 +56,8 @@ section {
   border-left: 0.4rem solid #e84393;
   border-right: 0.4rem solid #e84393;
   padding-right:1rem ;
-  margin-top: 1rem;
-  margin-bottom: 3rem;
+  margin-top: 3rem;
+  margin-bottom: 0.7rem;
 }
 .header-1 {
   display: flex;
@@ -409,7 +409,9 @@ section {
     right: 2rem;
     transition: 0.4s linear;
   }
-
+  .category{
+    height: 1100px;
+  }
   .header .navbar a {
     font-size: 2rem;
     margin: 2rem 2.5rem;
@@ -430,8 +432,100 @@ section {
 }
 
 
+/**************************                  about section               ********************/
+.about-section{
+  background-color: #191f3a;
+}
+.about-text,
+.about-img{
+   width: 50%;
+   padding:0 15px;
+}
+.section-title h2{
+  text-align: center;
+  color: white;
+  font-size: 40px;
+  padding: 10px;
+}
+.about-text h3{
+   font-size: 30px;
+   text-transform: capitalize;
+   margin:0 0 15px ;
+   color:#eaa023
+}
+.about-text p{
+   margin:0 0 15px ;
+   color: salmon;
+   font-size: 1.5rem;
+}
+.about-text .btn{
+   margin: 15px 0 0 ;
+}
+.about-img img{
+   width: 100%;
+   border-radius: 10px;
+}
+.about-img .img-box{
+   position: relative;
+}
+.about-img .img-box::before{
+   content: '';
+   position: absolute;
+   height: 100px ;
+   width: 100px;
+   border:3px solid #eaa023;
+   left: calc(50% - 50px);
+   top: calc(50% - 50px);
+   animation: spin01 10s linear infinite;
+}
+.about-img .img-box h3{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 100%;
+    max-width: 250px;
+    text-align: center;
+    text-transform: capitalize;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    font-weight: bold;
+    color:white;
+    font-family: 'Dancing Script', cursive;
+}
+@media(max-width:767px){
+  .home-text h1{
+      font-size: 50px;
+      line-height: 65px;
+  }
 
-/*******************************        categoryes option     ********************************/
+  .about-text,
+  .about-img{
+      width: 100%;
+  }
+  .about-section{
+    height: 800px;
+  }
+  
+  .about-img{
+      margin-top: 40px;
+  }
+  .about-text h3{
+      font-size: 24px;
+  }
+  .footer-item{
+      width: 100%;
+  }
+  
+  .footer-item:not(:last-child){
+      margin-bottom: 30px;
+  }
+  .testi-item{
+     width: calc(100% - 30px);
+ }
+ }
+ 
+
+/**************************************                categoryes option      **************************/
 
 .featured .featured-slider .box{
   margin:2rem 0;
@@ -441,7 +535,10 @@ section {
   text-align: center;
   
 }
-
+.featured .content p{
+  font-size: 2rem;
+  color:rgb(94, 84, 84);
+}
 
 .featured .heading{
   text-align: center;
@@ -527,6 +624,101 @@ section {
   color:#fff;
 }
 
+/************************************      deals of the day           **********************************************/
+.deal{
+  background-color: #0c1023;
+}
+.deal .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5em;
+  align-items: center;
+  color: goldenrod;
+}
+.deal .heading{
+  text-align: center;
+  color: goldenrod;
+}
+
+.deal .row #myVideo {
+  flex: 1 1 40rem;
+
+}
+
+
+.deal .row .image img {
+  width: 100%;
+}
+
+.deal .row .content {
+  flex: 1 1 40rem;
+}
+
+.deal .row .content .title {
+  font-size: 3.5rem;
+  color:var(--pink);
+  padding: 1rem 0;
+}
+
+.deal .row .content p {
+  font-size: 1.5rem;
+  color:salmon;
+}
+
+.deal .row .content .count-down {
+  display: flex;
+  padding: 1rem 0;
+  gap: 1.5em;
+}
+
+.deal .row .content .count-down .box {
+  width: 9rem;
+  text-align: center;
+  border: 0.1rem solid rgba(0, 0, 0, 0.3);
+}
+
+.deal .row .content .count-down .box h3 {
+  font-size: 5rem;
+  color:white;
+}
+.row .btn{
+  color: #eaa023;
+  background-color: #eee;
+}
+.row .btn:hover{
+  background-color: #e84393;
+}
+
+.deal .row .content .count-down .box span {
+  font-size: 1.7rem;
+  color: #fff;
+  display: block;
+  background:goldenrod;
+  padding: 0.5rem;
+}
+@media (max-width: 750px) {
+  html {
+    font-size: 50%;
+  }
+  
+  .deal{
+    height: 700px;
+    
+  }
+  .deal .row .content .count-down .box {
+    width: 7rem;
+  }
+  .deal .row .content .count-down .box h3 {
+    font-size: 3rem;
+    padding: 0.5rem 0;
+  }
+  .deal .row .content .count-down .box span {
+    font-size: 1.5rem;
+  }
+  #testimonials{
+    height: 850px;
+  }
+}
 
 /*********************************************   Gallery Section    ***********************************************/
 
@@ -638,7 +830,10 @@ section {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-auto-rows: 250px;
   }
-
+ .gal{
+   margin-top: 30px;
+   margin-bottom: 10px;
+ }
   .image-gallery .image-box:nth-child(7n + 1) {
     grid-column: unset;
     grid-row: unset;
@@ -704,6 +899,24 @@ section {
   color: #eaa023;
   font-size: 16px;
 }
+@media(max-width:991px){
+  .testi-item{
+      width: calc(50% - 30px);
+  }
+   .team-item{
+       width: 50%;
+      
+   } 
+   .team-item:not(:last-child){
+    margin-bottom: 75px;
+   }
+}
+@media(max-width:575px){
+  .team-item{
+      width: 100%; 
+  } 
+}
+
 
 /******************************************** Footer Section  ******************************************/
 
